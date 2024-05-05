@@ -1,0 +1,420 @@
+:root {
+  --pr-color: #ff5454;
+  --kp-color: #ff9f0f;
+  --sp-color: #ffe776;
+  --mp-color: #fff7d1;
+  --tp-color: #404040;
+  --ts-color: #787878;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+  z-index: 3;
+}
+
+* {
+  z-index: 2;
+}
+
+/* Styling navbar */
+.nav-color {
+  background-color: var(--mp-color);
+  transition: all ease-in-out 0.3s;
+}
+
+.bg-transparent {
+  transition: all ease-in-out 0.3s;
+}
+
+.navbar .navbar-brand {
+  font-family: "blac", "Helvetica";
+  font-weight: 700;
+  font-size: 32px;
+  color: var(--pr-color);
+}
+
+.nav-link {
+  font-size: 20px;
+  color: var(--ts-color);
+  position: relative;
+}
+
+.nav-item .nav-link.active {
+  color: var(--pr-color);
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--pr-color);
+}
+
+.nav-link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: var(--pr-color);
+  visibility: hidden;
+  transition: 0.3s ease-in-out;
+}
+
+.nav-link:hover::before,
+.nav-link.nav-link.active::before {
+  width: 50%;
+  visibility: visible;
+}
+
+.button-primary {
+  width: 123px;
+  height: 48px;
+  background-color: var(--pr-color);
+  border: none;
+  color: #fff;
+  border-radius: 50px;
+}
+
+/* Hero Style */
+.hero {
+  background: linear-gradient(180deg, #fff7d1 0%, #ffe776 37.36%, #ffa751 110.36%), linear-gradient(180deg, #79d1e5 -2.84%, #8dd7e2 3.88%, #afe3dc 17.79%, #cbecd8 32.62%, #e1f3d4 48.44%, #f1f8d2 65.74%, #fafbd0 95.51%, #fdfcd0 113.72%);
+  height: 100vh;
+  width: 100%;
+}
+
+.img-hero {
+  height: 60%;
+  position: relative;
+  z-index: 1;
+}
+
+.img-majalah {
+  height: 752px;
+  width: 652px;
+}
+
+.img-heros {
+  width: 100%;
+  position: relative;
+  z-index: 0;
+}
+
+.hero-tagline {
+  text-align: center;
+  margin-top: 8%;
+}
+
+.hero-tagline h1 {
+  font-weight: 700;
+  font-size: 50px;
+  color: var(--tp-color);
+  text-align: center;
+  margin: 0;
+}
+.hero-tagline p {
+  margin: 10px 0;
+  color: var(--ts-color);
+}
+.button-lg-primary {
+  width: 186px;
+  height: 48px;
+  background-color: var(--kp-color);
+  margin-top: 20px;
+  margin-bottom: 50px;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  font-size: 16px;
+}
+
+/* Tentang kami */
+.tentangkami {
+  padding: 160px 160px;
+}
+
+.tentangkami .tentangimg {
+  height: 494px;
+}
+
+.tentangkami span {
+  color: var(--pr-color);
+  font-size: 24px;
+  width: 100;
+}
+
+.tentangkami h2 {
+  font-size: 56px;
+  color: var(--tp-color);
+}
+.tentangkami p {
+  color: var(--ts-color);
+  font-size: 24px;
+}
+
+/* Keunggulan */
+.keunggulan {
+  padding: 160px 160px;
+}
+
+.keunggulan span {
+  color: var(--pr-color);
+  font-size: 24px;
+}
+
+.keunggulan h2 {
+  font-size: 40px;
+  font-weight: 200;
+  color: var(--tp-color);
+  margin-bottom: 2%;
+}
+
+.card-keunggulan {
+  width: 100%;
+  height: 312px;
+}
+.card-keunggulan h3 {
+  color: var(--tp-color);
+  font-size: 24px;
+  margin-top: 7%;
+}
+
+.card-keunggulan p {
+  font-size: 20px;
+  color: var(--ts-color);
+}
+
+/* galery */
+.galeri {
+  background-color: #fffaf2;
+  height: 801px;
+  padding: 160px 160px;
+}
+
+.fullgaleri {
+  font-size: 20px;
+  color: var(--kp-color);
+  font-weight: 500;
+  margin-left: 2%;
+}
+.galeri span {
+  color: var(--pr-color);
+  font-size: 24px;
+}
+
+.galeri h2 {
+  font-size: 40px;
+  font-weight: 200;
+  color: var(--tp-color);
+  margin-bottom: 2%;
+}
+
+/* mitra */
+.mitra {
+  padding: 160px 160px;
+}
+
+.mitra span {
+  color: var(--pr-color);
+  font-size: 24px;
+}
+.mitra h2 {
+  font-size: 40px;
+  font-weight: 200;
+  color: var(--tp-color);
+  margin-bottom: 2%;
+}
+.mitra p {
+  font-size: 24px;
+  color: #787878;
+}
+.card {
+  border: none;
+  height: 96px;
+  margin-top: 20%;
+}
+
+.card img {
+  max-height: 100%;
+}
+
+/* informasi */
+#lihat-semua {
+  margin-left: auto;
+}
+#lihat-semua .nav-link {
+  font-size: 20px;
+  font-weight: 500;
+  color: #ff9f0f;
+}
+
+.informasi {
+  padding: 160px 160px;
+}
+
+.informasi h2 {
+  font-size: 40px;
+  font-weight: 200;
+  color: #404040;
+  margin-bottom: 2%;
+}
+
+.informasi .nav-item {
+  margin-bottom: 3%;
+}
+.card-informasi p {
+  font-size: 20px;
+  color: #787878;
+}
+.card-informasi h3 {
+  font-size: 24px;
+  color: #404040;
+}
+
+/* mari gabung */
+.gabung {
+  background: linear-gradient(180deg, #79d1e5 -2.84%, #8dd7e2 3.88%, #afe3dc 17.79%, #cbecd8 32.62%, #e1f3d4 48.44%, #f1f8d2 65.74%, #fafbd0 95.51%, #fdfcd0 113.72%);
+  height: 797px;
+  width: 100%;
+  padding: 160px 160px;
+}
+
+.img-gabung {
+  height: 279.28px;
+  position: relative;
+  z-index: 0;
+}
+
+.img-gabungs {
+  width: 100%;
+  position: relative;
+  z-index: 0;
+}
+
+.gabung .judulgabung {
+  font-size: 32px;
+  font-weight: bold;
+  color: #404040;
+}
+
+.gabung p {
+  font-size: 20px;
+  color: #787878;
+  margin-bottom: 1%;
+}
+.gabung span {
+  color: var(--pr-color);
+  font-size: 24px;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  height: 366px;
+  background: #333;
+  color: #fff;
+}
+
+footer p {
+  margin-top: 3%;
+  margin-bottom: 3%;
+  font-size: 20px;
+}
+footer .img {
+  height: 64px;
+  width: 128px;
+}
+.footer-col h4 {
+  font-size: 24px;
+}
+
+.footer-col li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.footer-col ul {
+  list-style-type: none;
+  padding: 0;
+}
+.footer-col {
+  margin-right: 80px;
+}
+
+.footer-col:last-child {
+  margin-right: 0;
+}
+
+.footer-driver {
+  width: 100%;
+  border: none;
+  height: 1px;
+  background-color: #fff;
+  margin-left: 20px;
+}
+
+.copyright {
+  bottom: 1%;
+  color: #fff;
+  position: absolute;
+  font-size: 18px;
+}
+
+.konten h2 {
+  margin-top: 10%;
+}
+.profil {
+  padding: 160px 160px;
+}
+
+.profil span {
+  color: var(--pr-color);
+  font-size: 24px;
+  width: 500;
+}
+
+.profil h2 {
+  color: var(--tp-color);
+  font-size: 56px;
+}
+
+.profil p {
+  color: var(--ts-color);
+  font-size: 24px;
+}
+
+.video-profil {
+  padding: 160px 160px;
+}
+.video-profil span {
+  color: var(--pr-color);
+  font-size: 24px;
+}
+.video-profil h2 {
+  color: var(--tp-color);
+  font-size: 40px;
+}
+.video-profil p {
+  font-size: 24px;
+  color: var(--ts-color);
+}
+.video-profil img {
+  height: 618px;
+}
+.guru {
+  padding: 160px 160px;
+  background-color: #fffaf2;
+}
+
+.guru span {
+  color: var(--pr-color);
+  font-size: 24px;
+}
+.guru h2 {
+  color: var(--tp-color);
+  font-size: 40px;
+}
