@@ -1,8 +1,87 @@
-@media screen and (max-width: 922px) {
+@media screen and (max-width: 992px) {
+  .navbar-toggler {
+    order: -1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-brand img {
+    width: 28px;
+  }
 }
 
 @media screen and (max-width: 576px) {
+  .hero-tagline h2,
+  .kontak-img img {
+    line-height: 48px;
+  }
+  .hero-beranda,
+  .hero-beranda2,
+  .card-informasi {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 350px) {
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* Aturan untuk membuat teks responsif */
+.hero-tagline h2,
+.tentang-text h2,
+.keunggulan h2,
+.kegiatan h2,
+.galeri h2,
+.mitra h2,
+.informasi h2,
+.gabung h2,
+.tentangkami h2,
+.video-profil h2,
+.staf-guru h2,
+.pagination li a,
+.footer h5 {
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+.hero-tagline p,
+.tentang-text p,
+.keunggulan p,
+.mitra p,
+.informasi p,
+.gabung p,
+.footer p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Aturan untuk membuat tombol responsif */
+.button-primary,
+.button-lg-primary,
+.fullgaleri,
+.button-lg-primary {
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+}
+
+/* Aturan untuk mengatur tata letak */
+@media (min-width: 768px) {
+  .container {
+    max-width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1170px;
+  }
 }
