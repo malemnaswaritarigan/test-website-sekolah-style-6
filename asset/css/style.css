@@ -6,6 +6,7 @@
   --mp-color: #fff7d1;
   --tp-color: #404040;
   --ts-color: #787878;
+  --button-font-size: 1px;
 }
 
 body {
@@ -33,14 +34,19 @@ body {
 .navbar .navbar-brand {
   font-family: "blac", "Helvetica";
   font-weight: 700;
-  font-size: 32px;
+  font-size: 22px;
   color: var(--pr-color);
 }
 
+.navbar .navbar-brand img {
+  width: 22px;
+  height: 22px;
+}
 .nav-link {
-  font-size: 20px;
+  font-size: 15px;
   color: var(--ts-color);
   position: relative;
+  font-weight: 500;
 }
 
 .nav-item .nav-link.active {
@@ -59,7 +65,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   width: 0;
-  height: 2px;
+  height: 3px;
   background-color: var(--pr-color);
   visibility: hidden;
   transition: 0.3s ease-in-out;
@@ -72,12 +78,15 @@ body {
 }
 
 .button-primary {
-  width: 123px;
-  height: 48px;
+  width: 125x;
+  height: 30px;
+  font-size: 10px;
   background-color: var(--pr-color);
   border: none;
   color: #fff;
   border-radius: 50px;
+  display: flex;
+  align-items: center;
 }
 
 /* =========HERO===========*/
@@ -301,6 +310,7 @@ body {
   font-size: 20px;
   color: var(--kp-color);
   font-weight: 500;
+  text-decoration: none;
 }
 
 /* mitra */
@@ -339,7 +349,7 @@ body {
   margin-left: auto;
 }
 #lihat-semua .nav-link {
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 500;
   color: var(--kp-color);
 }
