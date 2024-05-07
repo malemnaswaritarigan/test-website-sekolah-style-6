@@ -17,6 +17,8 @@
   }
   .hero-beranda,
   .hero-beranda2,
+  .gabung-img1,
+  .gabung-img2,
   .card-informasi {
     width: 100%;
   }
@@ -34,6 +36,7 @@ img {
 .tentang-text h2,
 .keunggulan h2,
 .kegiatan h2,
+.konten h2,
 .galeri h2,
 .mitra h2,
 .informasi h2,
